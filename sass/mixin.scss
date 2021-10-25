@@ -1,0 +1,11 @@
+@mixin text_s($t_txt: 1em, $e_txt: normal) {
+  font-size: ($t_txt);
+  font-weight: ($e_txt);
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin titre_s($t_txt: 1em, $e_txt: normal) {
+  font-size: ($t_txt);
+  font-weight: ($e_txt);
+  font-family: "Shrikhand", cursive;
+}

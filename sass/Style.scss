@@ -1,12 +1,12 @@
-%titre {
-  font-family: "Shrikhand", sans-serif;
-}
-%text {
-  font-family: "Roboto", sans-serif;
-}
+@import "mixin.scss";
 %centretxt {
   text-align: center;
   justify-content: center;
+}
+$gris_c: rgba(246, 246, 246, 255);
+
+body {
+  margin: 0;
 }
 .logo_h {
   height: 2em;
@@ -16,13 +16,197 @@
   display: flex;
 }
 .lieux {
-  @extend %text, %centretxt;
+  @extend %centretxt;
+  @include text_s;
   display: flex;
   margin-top: 5%;
-  background-color: rgb(179, 177, 177);
+  background-color: rgba(234, 234, 234, 255);
   padding-bottom: 3%;
   padding-top: 3%;
+  box-shadow: inset 0px 5px 5px -5px black;
 }
 .loc {
   margin-right: 2%;
+}
+
+.reservation {
+  @extend %centretxt;
+  background-color: rgba(246, 246, 246, 255);
+  h2 {
+    padding-top: 1.5em;
+    padding: 1.5em 15% 0 15%;
+  }
+}
+
+h2 {
+  margin-top: 0;
+  @include text_s(1.4em, bold);
+}
+.txt {
+  @include text_s;
+  padding: 0 10% 10% 6%;
+}
+
+.bt {
+  @include text_s;
+  padding: 4% 5% 4% 5%;
+  border-radius: 50px;
+  background: linear-gradient(
+    rgba(233, 114, 218, 255),
+    rgba(171, 94, 220, 255)
+  );
+  color: white;
+  border-style: none;
+  box-shadow: 0px 0px 7px 0px gray;
+  margin-bottom: 15%;
+}
+
+.fonct {
+  margin-bottom: 20%;
+  h2 {
+    padding-top: 10%;
+    padding-left: 4%;
+  }
+}
+.s_fonct {
+  @extend %centretxt;
+  @include text_s(1em, bold);
+  align-items: center;
+  display: flex;
+  width: 90%;
+  background-color: $gris_c;
+  justify-content: start;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  height: 5em;
+  border-radius: 20px;
+  box-shadow: 2px 8px 10px 0px rgb(190, 188, 188);
+}
+.nm {
+  background-color: #9356dc;
+  padding: 1.1% 2.2% 1.1% 2.2%;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 100;
+  position: relative;
+  right: 3%;
+}
+.i_fonct {
+  color: gray;
+  font-size: 1.2em;
+  margin-right: 5%;
+  margin-left: 2%;
+}
+.s_fonct2 {
+  @extend .s_fonct;
+}
+
+.s_fonct3 {
+  @extend .s_fonct;
+  background-color: rgba(245, 237, 255, 255);
+  .i_fonct {
+    color: #9356dc;
+  }
+}
+
+// restaurant
+.rest {
+  display: flex;
+  flex-direction: column;
+  background-color: $gris_c;
+  padding-bottom: 13%;
+  h2 {
+    padding-top: 15%;
+    padding-left: 5%;
+  }
+}
+.carte_r {
+  width: 90%;
+  margin: 5%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 14px 0px rgb(197, 195, 195);
+  position: relative;
+}
+
+.img_r {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 11em;
+}
+
+.nouv {
+  @include text_s(0.9em, bold);
+  background-color: #99e2d0;
+  position: absolute;
+  top: 5%;
+  left: 73%;
+  padding: 2% 3% 2% 3%;
+  color: #139273;
+}
+.txt_r {
+  padding-left: 3%;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+h4 {
+  @include text_s(1.1em, bold);
+  margin: 0;
+}
+p {
+  @include text_s(1em);
+  margin: 0;
+}
+.i_rest {
+  float: right;
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: auto;
+  margin-left: 30%;
+  font-size: 1.5em;
+}
+
+.bas_r {
+  display: flex;
+}
+// footer
+.bas_p {
+  background-color: rgba(53, 53, 53, 255);
+  color: white;
+  margin: 0;
+  padding-top: 5%;
+  padding-left: 6%;
+  padding-bottom: 10%;
+  li {
+    margin-bottom: 2%;
+  }
+}
+.txt_f {
+  list-style: none;
+  @include text_s(1em);
+}
+
+.logo_f {
+  @include titre_s(1.1em, 100);
+  list-style: none;
+  padding-bottom: 4%;
+}
+.i_foot {
+  font-size: 0.8em;
+  margin-right: 3%;
+}
+.i_foot2 {
+  @extend .i_foot;
+  font-size: 0.6em;
+}
+.i_t_foot {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
