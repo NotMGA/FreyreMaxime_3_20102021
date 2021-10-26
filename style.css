@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
+header {
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
 body {
   margin: 0;
 }
@@ -65,6 +71,10 @@ h2 {
   border-style: none;
   box-shadow: 0px 0px 7px 0px gray;
   margin-bottom: 15%;
+}
+.bt:hover, .bt_c:hover {
+  background: linear-gradient(#e996da, #ab78dc);
+  box-shadow: 0px 0px 8px 1px gray;
 }
 
 .fonct {
@@ -189,6 +199,16 @@ p {
   margin-left: 30%;
   font-size: 1.5em;
 }
+.i_rest:hover .i_remp {
+  transform: scale(1);
+  transition: transform 3000ms ease-out;
+}
+
+.i_remp {
+  transform: scale(0);
+  position: absolute;
+  color: red;
+}
 
 .bas_r {
   display: flex;
@@ -238,6 +258,16 @@ p {
 .neutre_f {
   text-decoration: none;
   color: white;
+}
+
+.i_ret {
+  font-size: 1.3em;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+.i_ret a {
+  color: black;
 }
 
 .menu {
