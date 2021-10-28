@@ -15,7 +15,7 @@
   align-items: center;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.4;
   animation: opa 2s ease-in 2s forwards;
   z-index: 1;
 }
@@ -326,33 +326,116 @@ p {
   @include text_s(0.9em);
   background: white;
   margin: $pm;
+  overflow: hidden;
+  text-overflow: ellipsis;
   h5 {
     margin: 0%;
     font-size: 1.3em;
     margin-bottom: 2%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   border-radius: 15px;
   box-shadow: 0px 5px 14px 0px #c5c3c3;
   display: flex;
+  &:hover .check {
+    transform: translateX(-100px);
+    transition: transform 3000ms ease-out;
+  }
+  &:hover .check_i {
+    transform: rotate(360deg);
+    transition: transform 3000ms ease-out;
+  }
+  &:hover .money {
+    transform: translateX($dep);
+    transition: transform 3000ms ease-out;
+  }
+  &:hover .t {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &:hover .nm_plat {
+    animation: w 3000ms ease-out;
+  }
+  @keyframes w {
+    to {
+      width: 60%;
+    }
+  }
 }
+// anim plat
+.check {
+  padding-top: 7%;
+  padding-bottom: 6%;
+  height: 100%;
+  background-color: $tertiaire;
+  border-radius: 0 15px 15px 0;
+  width: 6em;
+  right: -100px;
+  position: relative;
+}
+.check_i {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+}
+// fin anim plat
 .nm_plat {
   padding-left: $pm;
-  width: 70%;
+  width: 100%;
   padding-bottom: 3%;
   padding-top: 3%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.t {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .money {
-  margin-left: auto;
-  margin-right: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 3%;
   margin-top: auto;
   font-weight: bold;
+  position: relative;
+  right: -50px;
 }
 .menu_s {
   display: flex;
   flex-direction: column;
+  position: relative;
   margin-bottom: 10%;
+  opacity: 0;
+  top: 20px;
 }
+// animation menu
+.menu_s1 {
+  @extend .menu_s;
+  animation: anim_s 3s ease-in forwards;
+}
+.menu_s2 {
+  @extend .menu_s;
+  animation: anim_s 2s 1s ease-in forwards;
+}
+.menu_s3 {
+  @extend .menu_s;
+  animation: anim_s 1s 2s ease-in forwards;
+}
+
+@keyframes anim_s {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+// fin animation menu
 .plat_t {
   @include text_s;
   width: 15%;
