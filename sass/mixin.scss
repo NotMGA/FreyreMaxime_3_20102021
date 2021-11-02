@@ -9,3 +9,15 @@
   font-weight: ($e_txt);
   font-family: "Shrikhand", cursive;
 }
+
+@mixin tab {
+  @media (min-width: 781px) and (max-width: 1050px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: 1050px) {
+    @content;
+  }
+}

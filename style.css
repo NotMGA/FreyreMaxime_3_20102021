@@ -57,6 +57,11 @@ body {
 .logo_h {
   height: 2em;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .logo_h {
+    height: 4em;
+  }
+}
 
 .centre {
   margin: auto;
@@ -73,6 +78,11 @@ body {
   padding-bottom: 3%;
   padding-top: 3%;
   box-shadow: inset 0px 5px 5px -5px black;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .lieux {
+    font-size: 2em;
+  }
 }
 
 .loc {
@@ -93,12 +103,23 @@ h2 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  h2 {
+    font-size: 2em;
+  }
+}
 
 .txt {
   font-size: 1em;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
   padding: 0 10% 10% 6%;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .txt {
+    font-size: 1.5em;
+    padding: 0 10% 5% 6%;
+  }
 }
 
 .bt, .bt_c {
@@ -117,6 +138,12 @@ h2 {
   background: linear-gradient(#e996da, #ab78dc);
   box-shadow: 0px 0px 8px 1px gray;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .bt, .bt_c {
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+}
 
 .fonct {
   margin-bottom: 20%;
@@ -124,6 +151,11 @@ h2 {
 .fonct h2 {
   padding-top: 10%;
   padding-left: 4%;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .fonct {
+    margin-bottom: 10%;
+  }
 }
 
 .s_fonct {
@@ -146,6 +178,11 @@ h2 {
 }
 .s_fonct:hover .i_fonct {
   color: #9356dc;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .s_fonct {
+    font-size: 1.5em;
+  }
 }
 
 .nm {
@@ -197,6 +234,11 @@ h2 {
   border-radius: 15px 15px 0 0;
   height: 11em;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .img_r, .img_m {
+    height: 20em;
+  }
+}
 
 .nouv {
   font-size: 0.9em;
@@ -208,6 +250,11 @@ h2 {
   left: 73%;
   padding: 2% 3% 2% 3%;
   color: #139273;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .nouv {
+    left: 85%;
+  }
 }
 
 .txt_r {
@@ -223,12 +270,22 @@ h4 {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  h4 {
+    font-size: 1.6em;
+  }
+}
 
 p {
   font-size: 1em;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
   margin: 0;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  p {
+    font-size: 1.4em;
+  }
 }
 
 .i_rest {
@@ -237,7 +294,7 @@ p {
   position: absolute;
   left: 50%;
   top: 70%;
-  margin-top: 8%;
+  margin-top: 5%;
   margin-bottom: auto;
   margin-left: 30%;
   font-size: 1.5em;
@@ -247,6 +304,11 @@ p {
   z-index: 2;
   transform: scale(1.1);
   transition: transform 3000ms ease-out;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .i_rest {
+    font-size: 2.5em;
+  }
 }
 
 .i_remp {
@@ -273,12 +335,22 @@ p {
 .bas_p li {
   margin-bottom: 2%;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .bas_p {
+    padding-bottom: 5%;
+  }
+}
 
 .txt_f {
   list-style: none;
   font-size: 1em;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .txt_f {
+    font-size: 1.5em;
+  }
 }
 
 .logo_f {
@@ -288,14 +360,29 @@ p {
   list-style: none;
   padding-bottom: 4%;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .logo_f {
+    font-size: 2em;
+  }
+}
 
 .i_foot, .i_foot2 {
   font-size: 0.8em;
   margin-right: 3%;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .i_foot, .i_foot2 {
+    font-size: 1.2em;
+  }
+}
 
 .i_foot2 {
   font-size: 0.6em;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .i_foot2 {
+    font-size: 1em;
+  }
 }
 
 .i_t_foot {
@@ -317,6 +404,11 @@ p {
 .i_ret a {
   color: black;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .i_ret {
+    font-size: 3em;
+  }
+}
 
 .menu {
   background-color: #f6f6f6;
@@ -337,6 +429,16 @@ p {
   font-family: "Shrikhand", cursive;
   margin-bottom: 0;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .titre h2 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .titre {
+    padding-left: 30%;
+  }
+}
 
 .i_menu {
   margin: auto;
@@ -348,10 +450,20 @@ p {
   transform: scale(1.1);
   transition: transform 3000ms ease-out;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .i_menu {
+    font-size: 2.5em;
+  }
+}
 
 .img_m {
   border-radius: 0;
   height: 16em;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .img_m {
+    height: 25em;
+  }
 }
 
 .plat {
@@ -375,9 +487,19 @@ p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .plat h5 {
+    font-size: 1.2em;
+  }
+}
 .plat:hover .check {
   transform: translateX(-125%);
   transition: transform 2000ms ease-out;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .plat:hover .check {
+    transform: translateX(-140%);
+  }
 }
 .plat:hover .check_i {
   transform: rotate(360deg);
@@ -399,6 +521,11 @@ p {
     width: 60%;
   }
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .plat {
+    font-size: 1.8em;
+  }
+}
 
 .check {
   padding-top: 7%;
@@ -409,6 +536,11 @@ p {
   width: 4em;
   right: -21%;
   position: absolute;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .check {
+    width: 5em;
+  }
 }
 
 .check_i {
@@ -478,6 +610,11 @@ p {
   margin-left: 3%;
   position: relative;
 }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .plat_t {
+    font-size: 2em;
+  }
+}
 
 .barre {
   height: 3px;
@@ -486,6 +623,12 @@ p {
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 3%;
+}
+@media (min-width: 781px) and (max-width: 1050px) {
+  .barre {
+    width: 4.5em;
+    height: 6px;
+  }
 }
 
 .bt_c {
