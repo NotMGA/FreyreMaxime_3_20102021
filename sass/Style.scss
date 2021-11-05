@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   opacity: 0.4;
-  animation: opa 2s ease-in 2s forwards;
+  animation: opa 1s ease-in 1s forwards;
   z-index: 1;
 }
 @keyframes opa {
@@ -62,7 +62,7 @@ body {
 .logo_h {
   height: 2em;
   @include tab {
-    height: 4em;
+    height: 3em;
   }
   @include pc {
     height: 4em;
@@ -82,11 +82,13 @@ body {
   padding-top: 3%;
   box-shadow: inset 0px 5px 5px -5px black;
   @include tab {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   @include pc {
     font-size: 1.4em;
     margin-top: 0;
+    padding-bottom: 1%;
+    padding-top: 1%;
   }
 }
 .loc {
@@ -106,7 +108,7 @@ h2 {
   margin-top: 0;
   @include text_s(1.4em, bold);
   @include tab {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   @include pc {
     font-size: 2em;
@@ -116,12 +118,12 @@ h2 {
   @include text_s;
   padding: 0 10% 10% 6%;
   @include tab {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0 10% 5% 6%;
   }
   @include pc {
     font-size: 1.5em;
-    padding: 0 10% 5% 6%;
+    padding: 0 10% 1% 6%;
   }
 }
 
@@ -146,13 +148,14 @@ h2 {
     box-shadow: 0px 0px 8px 1px gray;
   }
   @include tab {
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin-bottom: 5%;
+    padding: 2% 3% 2% 3%;
   }
   @include pc {
     font-size: 1.4em;
     margin-bottom: 3%;
-    padding: 3% 4% 3% 4%;
+    padding: 1.5% 2.5% 1.5% 2.5%;
   }
 }
 
@@ -161,12 +164,25 @@ h2 {
   h2 {
     padding-top: 10%;
     padding-left: 4%;
+    @include tab {
+      padding-top: 1%;
+      width: 90%;
+    }
+    @include pc {
+      padding-top: 1%;
+      width: 100%;
+      margin-left: 1%;
+    }
   }
   @include tab {
-    margin-bottom: 10%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
   }
   @include pc {
     margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .s_fonct {
@@ -189,12 +205,13 @@ h2 {
     }
   }
   @include tab {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    width: 42%;
   }
   @include pc {
     font-size: 1.4em;
     margin-bottom: 2%;
-    width: 50%;
+    width: 25%;
   }
 }
 .nm {
@@ -223,11 +240,22 @@ h2 {
   h2 {
     padding-top: 15%;
     padding-left: 5%;
+    @include tab {
+      width: 100%;
+      padding-top: 2%;
+    }
     @include pc {
       padding-top: 5%;
+      width: 100%;
     }
   }
+  @include tab {
+    flex-wrap: wrap;
+    flex-direction: unset;
+  }
   @include pc {
+    flex-wrap: wrap;
+    flex-direction: unset;
     padding-bottom: 0%;
   }
 }
@@ -242,8 +270,14 @@ h2 {
   border-radius: 15px;
   box-shadow: 0px 5px 14px 0px rgb(197, 195, 195);
   position: relative;
+  @include tab {
+    width: 40%;
+    margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include pc {
-    width: 50%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0%;
@@ -257,10 +291,10 @@ h2 {
   border-radius: 15px 15px 0 0;
   height: 11em;
   @include tab {
-    height: 20em;
+    height: 10em;
   }
   @include pc {
-    height: 20em;
+    height: 15em;
   }
 }
 
@@ -273,7 +307,7 @@ h2 {
   padding: 2% 3% 2% 3%;
   color: #139273;
   @include tab {
-    left: 85%;
+    left: 75%;
   }
 }
 .txt_r {
@@ -281,12 +315,16 @@ h2 {
   width: 50%;
   margin-top: 5%;
   margin-bottom: 5%;
+  @include pc {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
 }
 h4 {
   @include text_s(1.1em, bold);
   margin: 0;
   @include tab {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
   @include pc {
     font-size: 1.5em;
@@ -296,7 +334,7 @@ p {
   @include text_s(1em);
   margin: 0;
   @include tab {
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
   @include pc {
     font-size: 1.3em;
@@ -306,8 +344,8 @@ p {
   float: right;
   display: flex;
   position: absolute;
-  left: 50%;
-  top: 70%;
+  left: 54%;
+  top: 72%;
   margin-top: 5%;
   margin-bottom: auto;
   margin-left: 30%;
@@ -316,10 +354,10 @@ p {
   &:hover .i_remp {
     z-index: 2;
     transform: scale(1.1);
-    transition: transform 3000ms ease-out;
+    transition: transform 1500ms ease-out;
   }
   @include tab {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   @include pc {
     font-size: 2.2em;
@@ -358,7 +396,10 @@ p {
     padding-bottom: 5%;
   }
   @include pc {
-    padding-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+    padding-top: 2%;
   }
 }
 .txt_f {
@@ -369,6 +410,7 @@ p {
   }
   @include pc {
     font-size: 1.4em;
+    width: 20%;
   }
 }
 
@@ -380,8 +422,10 @@ p {
     font-size: 2em;
   }
   @include pc {
+    width: 100%;
     font-size: 3em;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    padding-bottom: 2%;
   }
 }
 .i_foot {
@@ -421,7 +465,7 @@ p {
     color: black;
   }
   @include tab {
-    font-size: 3em;
+    font-size: 2em;
   }
   @include pc {
     font-size: 2em;
@@ -430,6 +474,10 @@ p {
 }
 .menu {
   background-color: $gris_c;
+  @include pc {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .titre {
   background-color: rgba(246, 246, 246, 255);
@@ -443,33 +491,34 @@ p {
     @include titre_s(1.8em);
     margin-bottom: 0;
     @include tab {
-      font-size: 2.5em;
+      font-size: 1.8em;
     }
     @include pc {
-      font-size: 3em;
+      font-size: 2.5em;
     }
   }
   @include tab {
-    padding-left: 30%;
+    padding-left: 3%;
   }
   @include pc {
     padding-top: 2%;
+    width: 100%;
   }
 }
 .i_menu {
   margin: auto;
-  margin-left: 15%;
+  margin-left: 27%;
   font-size: 1.5em;
   &:hover .i_remp {
     z-index: 2;
     transform: scale(1.1);
-    transition: transform 3000ms ease-out;
+    transition: transform 1500ms ease-out;
   }
   @include tab {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   @include pc {
-    font-size: 2.5em;
+    font-size: 1.9em;
   }
 }
 .img_m {
@@ -509,23 +558,26 @@ p {
   display: flex;
   &:hover .check {
     transform: translateX(-125%);
-    transition: transform 2000ms ease-out;
+    transition: transform 1200ms ease-out;
     @include tab {
-      transform: translateX(-140%);
+      transform: translateX(-110%);
     }
     @include pc {
-      transform: translateX(-235%);
+      transform: translateX(-100%);
     }
   }
   &:hover .check_i {
     transform: rotate(360deg);
-    transition: transform 3000ms ease-out;
+    transition: transform 1200ms ease-out;
   }
   &:hover .money {
     transform: translateX(0%);
-    transition: transform 3000ms ease-out;
+    transition: transform 1200ms ease-out;
+    @include tab {
+      transform: translateX(120%);
+    }
     @include pc {
-      transform: translateX(100%);
+      transform: translateX(60%);
     }
   }
   &:hover .t {
@@ -533,7 +585,7 @@ p {
     text-overflow: ellipsis;
   }
   &:hover .nm_plat {
-    animation: w 3000ms ease-out forwards;
+    animation: w 1200ms ease-out forwards;
   }
   @keyframes w {
     to {
@@ -541,10 +593,13 @@ p {
     }
   }
   @include tab {
-    font-size: 1.8em;
+    font-size: 1.2em;
+    margin: 1%;
+    margin-right: 3%;
+    margin-left: 3%;
   }
   @include pc {
-    font-size: 2em;
+    font-size: 1.3em;
     margin-bottom: 1%;
   }
 }
@@ -560,9 +615,13 @@ p {
   position: absolute;
   @include tab {
     width: 5em;
+    padding-top: 5.5%;
+    height: 20%;
+    right: -11%;
   }
   @include pc {
-    width: 5em;
+    right: -14%;
+    width: 4em;
     padding-top: 5.5%;
   }
 }
@@ -596,7 +655,7 @@ p {
   position: relative;
   right: -8%;
   @include pc {
-    right: -15%;
+    right: -10%;
   }
 }
 .menu_s {
@@ -607,7 +666,11 @@ p {
   opacity: 0;
   top: 20px;
   @include pc {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    width: 33%;
+  }
+  @include tab {
+    margin-bottom: 2%;
   }
 }
 // animation menu
@@ -640,10 +703,10 @@ p {
   margin-left: $pm;
   position: relative;
   @include tab {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   @include pc {
-    font-size: 2.2em;
+    font-size: 1.7em;
   }
 }
 .barre {
@@ -654,8 +717,8 @@ p {
   margin-bottom: 2%;
   margin-left: $pm;
   @include tab {
-    width: 4.5em;
-    height: 6px;
+    width: 2.5em;
+    height: 4px;
   }
   @include pc {
     width: 5em;
@@ -667,6 +730,12 @@ p {
   @extend .bt;
   padding-left: 15%;
   padding-right: 15%;
+  @include pc {
+    padding: 10% 20% 10% 20%;
+    margin-left: 600%;
+    font-size: 1.6em;
+    margin-bottom: 20%;
+  }
 }
 .pos_bc {
   text-align: center;
