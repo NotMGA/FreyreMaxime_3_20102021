@@ -577,7 +577,7 @@ p {
       transform: translateX(120%);
     }
     @include pc {
-      transform: translateX(60%);
+      transform: translateX(20%);
     }
   }
   &:hover .t {
@@ -607,7 +607,7 @@ p {
 .check {
   padding-top: 7%;
   padding-bottom: 6%;
-  height: 32%;
+  height: 40%;
   background-color: $tertiaire;
   border-radius: 0 15px 15px 0;
   width: 4em;
@@ -620,7 +620,7 @@ p {
     right: -11%;
   }
   @include pc {
-    right: -14%;
+    right: -18%;
     width: 4em;
     padding-top: 5.5%;
   }
@@ -667,7 +667,8 @@ p {
   top: 20px;
   @include pc {
     margin-bottom: 2%;
-    width: 33%;
+    width: 32em;
+    margin-left: auto;
   }
   @include tab {
     margin-bottom: 2%;

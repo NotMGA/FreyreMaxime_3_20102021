@@ -722,7 +722,7 @@ p {
 }
 @media (min-width: 1050px) {
   .plat:hover .money {
-    transform: translateX(60%);
+    transform: translateX(20%);
   }
 }
 .plat:hover .t {
@@ -755,7 +755,7 @@ p {
 .check {
   padding-top: 7%;
   padding-bottom: 6%;
-  height: 32%;
+  height: 40%;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
   width: 4em;
@@ -772,7 +772,7 @@ p {
 }
 @media (min-width: 1050px) {
   .check {
-    right: -14%;
+    right: -18%;
     width: 4em;
     padding-top: 5.5%;
   }
@@ -823,7 +823,8 @@ p {
 @media (min-width: 1050px) {
   .menu_s, .menu_s3, .menu_s2, .menu_s1 {
     margin-bottom: 2%;
-    width: 33%;
+    width: 32em;
+    margin-left: auto;
   }
 }
 @media (min-width: 781px) and (max-width: 1050px) {
