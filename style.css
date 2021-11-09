@@ -63,7 +63,7 @@ body {
 .logo_h {
   height: 2em;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .logo_h {
     height: 3em;
   }
@@ -90,7 +90,7 @@ body {
   padding-top: 3%;
   box-shadow: inset 0px 5px 5px -5px black;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .lieux {
     font-size: 1.2em;
   }
@@ -122,7 +122,7 @@ h2 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   h2 {
     font-size: 1.5em;
   }
@@ -139,7 +139,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   padding: 0 10% 10% 6%;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .txt {
     font-size: 1.2em;
     padding: 0 10% 5% 6%;
@@ -168,7 +168,7 @@ h2 {
   background: linear-gradient(#e996da, #ab78dc);
   box-shadow: 0px 0px 8px 1px gray;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .bt, .bt_c {
     font-size: 1.1em;
     margin-bottom: 5%;
@@ -190,7 +190,7 @@ h2 {
   padding-top: 10%;
   padding-left: 4%;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .fonct h2 {
     padding-top: 1%;
     width: 90%;
@@ -203,7 +203,7 @@ h2 {
     margin-left: 1%;
   }
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .fonct {
     margin-bottom: 2%;
     display: flex;
@@ -239,7 +239,7 @@ h2 {
 .s_fonct:hover .i_fonct {
   color: #9356dc;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .s_fonct {
     font-size: 1.2em;
     width: 42%;
@@ -281,7 +281,7 @@ h2 {
   padding-top: 15%;
   padding-left: 5%;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .rest h2 {
     width: 100%;
     padding-top: 2%;
@@ -293,7 +293,7 @@ h2 {
     width: 100%;
   }
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .rest {
     flex-wrap: wrap;
     flex-direction: unset;
@@ -320,7 +320,7 @@ h2 {
   box-shadow: 0px 5px 14px 0px #c5c3c3;
   position: relative;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .carte_r {
     width: 40%;
     margin: 2%;
@@ -344,7 +344,7 @@ h2 {
   border-radius: 15px 15px 0 0;
   height: 11em;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .img_r, .img_m {
     height: 10em;
   }
@@ -366,7 +366,7 @@ h2 {
   padding: 2% 3% 2% 3%;
   color: #139273;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .nouv {
     left: 75%;
   }
@@ -391,7 +391,7 @@ h4 {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   h4 {
     font-size: 1.2em;
   }
@@ -408,7 +408,7 @@ p {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   p {
     font-size: 1.1em;
   }
@@ -436,7 +436,7 @@ p {
   transform: scale(1.1);
   transition: transform 1500ms ease-out;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .i_rest {
     font-size: 1.5em;
   }
@@ -476,7 +476,7 @@ p {
     margin-bottom: 0.5%;
   }
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .bas_p {
     padding-bottom: 5%;
   }
@@ -496,7 +496,7 @@ p {
   font-weight: normal;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .txt_f {
     font-size: 1.5em;
   }
@@ -515,7 +515,7 @@ p {
   list-style: none;
   padding-bottom: 4%;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .logo_f {
     font-size: 2em;
   }
@@ -533,7 +533,7 @@ p {
   font-size: 0.8em;
   margin-right: 3%;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .i_foot, .i_foot2 {
     font-size: 1.2em;
   }
@@ -547,7 +547,7 @@ p {
 .i_foot2 {
   font-size: 0.6em;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .i_foot2 {
     font-size: 1em;
   }
@@ -572,7 +572,7 @@ p {
 .i_ret a {
   color: black;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .i_ret {
     font-size: 2em;
   }
@@ -609,7 +609,7 @@ p {
   font-family: "Shrikhand", cursive;
   margin-bottom: 0;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .titre h2 {
     font-size: 1.8em;
   }
@@ -619,7 +619,7 @@ p {
     font-size: 2.5em;
   }
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .titre {
     padding-left: 3%;
   }
@@ -633,7 +633,7 @@ p {
 
 .i_menu {
   margin: auto;
-  margin-left: 27%;
+  margin-left: 10%;
   font-size: 1.5em;
 }
 .i_menu:hover .i_remp {
@@ -641,7 +641,7 @@ p {
   transform: scale(1.1);
   transition: transform 1500ms ease-out;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .i_menu {
     font-size: 1.5em;
   }
@@ -656,7 +656,7 @@ p {
   border-radius: 0;
   height: 16em;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .img_m {
     height: 25em;
   }
@@ -688,7 +688,7 @@ p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .plat h5 {
     font-size: 1.2em;
   }
@@ -697,7 +697,7 @@ p {
   transform: translateX(-125%);
   transition: transform 1200ms ease-out;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .plat:hover .check {
     transform: translateX(-110%);
   }
@@ -715,9 +715,9 @@ p {
   transform: translateX(0%);
   transition: transform 1200ms ease-out;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .plat:hover .money {
-    transform: translateX(120%);
+    transform: translateX(110%);
   }
 }
 @media (min-width: 1050px) {
@@ -737,7 +737,7 @@ p {
     width: 60%;
   }
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .plat {
     font-size: 1.2em;
     margin: 1%;
@@ -762,19 +762,19 @@ p {
   right: -21%;
   position: absolute;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .check {
     width: 5em;
     padding-top: 5.5%;
     height: 20%;
-    right: -11%;
+    right: -15%;
   }
 }
 @media (min-width: 1050px) {
   .check {
     right: -18%;
     width: 4em;
-    padding-top: 5.5%;
+    padding-top: 6.5%;
   }
 }
 
@@ -816,7 +816,7 @@ p {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 10%;
+  padding-bottom: 10%;
   opacity: 0;
   top: 20px;
 }
@@ -825,11 +825,17 @@ p {
     margin-bottom: 2%;
     width: 32em;
     margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
   }
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .menu_s, .menu_s3, .menu_s2, .menu_s1 {
-    margin-bottom: 2%;
+    margin-bottom: 0;
+    padding-bottom: 2%;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -862,7 +868,7 @@ p {
   margin-left: 3%;
   position: relative;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .plat_t {
     font-size: 1.2em;
   }
@@ -881,7 +887,7 @@ p {
   margin-bottom: 2%;
   margin-left: 3%;
 }
-@media (min-width: 781px) and (max-width: 1050px) {
+@media (min-width: 767px) and (max-width: 1050px) {
   .barre {
     width: 2.5em;
     height: 4px;
@@ -901,15 +907,14 @@ p {
 }
 @media (min-width: 1050px) {
   .bt_c {
-    padding: 10% 20% 10% 20%;
-    margin-left: 600%;
+    padding: 1em 2em 1em 2em;
     font-size: 1.6em;
-    margin-bottom: 20%;
   }
 }
 
 .pos_bc {
   text-align: center;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */

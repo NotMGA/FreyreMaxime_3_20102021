@@ -11,7 +11,7 @@
 }
 
 @mixin tab {
-  @media (min-width: 781px) and (max-width: 1050px) {
+  @media (min-width: 767px) and (max-width: 1050px) {
     @content;
   }
 }

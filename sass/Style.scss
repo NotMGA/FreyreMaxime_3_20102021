@@ -507,7 +507,7 @@ p {
 }
 .i_menu {
   margin: auto;
-  margin-left: 27%;
+  margin-left: 10%;
   font-size: 1.5em;
   &:hover .i_remp {
     z-index: 2;
@@ -574,7 +574,7 @@ p {
     transform: translateX(0%);
     transition: transform 1200ms ease-out;
     @include tab {
-      transform: translateX(120%);
+      transform: translateX(110%);
     }
     @include pc {
       transform: translateX(20%);
@@ -617,12 +617,12 @@ p {
     width: 5em;
     padding-top: 5.5%;
     height: 20%;
-    right: -11%;
+    right: -15%;
   }
   @include pc {
     right: -18%;
     width: 4em;
-    padding-top: 5.5%;
+    padding-top: 6.5%;
   }
 }
 .check_i {
@@ -662,16 +662,22 @@ p {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 10%;
+  padding-bottom: 10%;
   opacity: 0;
   top: 20px;
   @include pc {
     margin-bottom: 2%;
     width: 32em;
     margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
   }
   @include tab {
-    margin-bottom: 2%;
+    margin-bottom: 0;
+    padding-bottom: 2%;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 // animation menu
@@ -732,12 +738,11 @@ p {
   padding-left: 15%;
   padding-right: 15%;
   @include pc {
-    padding: 10% 20% 10% 20%;
-    margin-left: 600%;
+    padding: 1em 2em 1em 2em;
     font-size: 1.6em;
-    margin-bottom: 20%;
   }
 }
 .pos_bc {
   text-align: center;
+  background-color: #f6f6f6;
 }
