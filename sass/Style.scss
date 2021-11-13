@@ -4,7 +4,7 @@
   text-align: center;
   justify-content: center;
 }
-// loading screen
+// loading screen animation
 .loader_b {
   width: 100%;
   height: 100%;
@@ -59,7 +59,9 @@ header {
 body {
   margin: 0;
 }
+
 .logo_h {
+  // taille du logo
   height: 2em;
   @include tab {
     height: 3em;
@@ -72,6 +74,7 @@ body {
   margin: auto;
   display: flex;
 }
+// lieux de la ville
 .lieux {
   @extend %centretxt;
   @include text_s;
@@ -91,6 +94,7 @@ body {
     padding-top: 1%;
   }
 }
+// logo du lieux
 .loc {
   margin-right: 2%;
 }
@@ -127,6 +131,7 @@ h2 {
   }
 }
 
+// bouton explorer
 .bt {
   @include text_s;
   padding: 4% 5% 4% 5%;
@@ -159,6 +164,7 @@ h2 {
   }
 }
 
+// menu fontcionment
 .fonct {
   margin-bottom: 20%;
   h2 {
@@ -185,6 +191,7 @@ h2 {
     flex-wrap: wrap;
   }
 }
+// case du menu fonction
 .s_fonct {
   @extend %centretxt;
   @include text_s(1em, bold);
@@ -263,6 +270,7 @@ h2 {
   text-decoration: none;
   color: black;
 }
+// carte restaurant
 .carte_r {
   width: 90%;
   margin: 5%;
@@ -285,6 +293,7 @@ h2 {
   }
 }
 
+// image des cartes restaurants
 .img_r {
   object-fit: cover;
   width: 100%;
@@ -298,6 +307,7 @@ h2 {
   }
 }
 
+// logo nouveau
 .nouv {
   @include text_s(0.9em, bold);
   background-color: #99e2d0;
@@ -340,6 +350,7 @@ p {
     font-size: 1.3em;
   }
 }
+// logo coeur des cartes restaurants
 .i_rest {
   float: right;
   display: flex;
@@ -351,11 +362,13 @@ p {
   margin-left: 30%;
   font-size: 1.5em;
   z-index: 2;
+  // animation du coeur
   &:hover .i_remp {
     z-index: 2;
     transform: scale(1.1);
     transition: transform 1500ms ease-out;
   }
+  // fin animation des coeur
   @include tab {
     font-size: 1.5em;
   }
@@ -363,6 +376,7 @@ p {
     font-size: 2.2em;
   }
 }
+// coeur pour animation
 .i_remp {
   z-index: 2;
   transform: scale(0);
@@ -428,6 +442,7 @@ p {
     padding-bottom: 2%;
   }
 }
+// logo des couverts
 .i_foot {
   font-size: 0.8em;
   margin-right: 3%;
@@ -438,6 +453,7 @@ p {
     margin-right: 1%;
   }
 }
+// logo main
 .i_foot2 {
   @extend .i_foot;
   font-size: 0.6em;
@@ -454,8 +470,11 @@ p {
   color: white;
 }
 
-// menu1.html
+// fin de la page index
 
+// menu.html
+
+// logo retour
 .i_ret {
   font-size: 1.3em;
   margin: auto;
@@ -472,6 +491,7 @@ p {
     margin-left: 1%;
   }
 }
+// menu du restaurant
 .menu {
   background-color: $gris_c;
   @include pc {
@@ -505,6 +525,7 @@ p {
     width: 100%;
   }
 }
+// position du coeur
 .i_menu {
   margin: auto;
   margin-left: 10%;
@@ -521,6 +542,7 @@ p {
     font-size: 1.9em;
   }
 }
+// image du retaurant
 .img_m {
   @extend .img_r;
   border-radius: 0;
@@ -532,7 +554,7 @@ p {
     height: 30em;
   }
 }
-
+// plat des menus
 .plat {
   @include text_s(0.9em);
   background: white;
@@ -548,7 +570,6 @@ p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    // text-overflow: ellipsis;
     @include tab {
       font-size: 1.2em;
     }
@@ -556,7 +577,9 @@ p {
   border-radius: 15px;
   box-shadow: 0px 5px 14px 0px #c5c3c3;
   display: flex;
+  // animation  des check
   &:hover .check {
+    // transition droite a gauche
     transform: translateX(-125%);
     transition: transform 1200ms ease-out;
     @include tab {
@@ -567,6 +590,7 @@ p {
     }
   }
   &:hover .check_i {
+    // rotation du logo
     transform: rotate(360deg);
     transition: transform 1200ms ease-out;
   }
@@ -603,7 +627,7 @@ p {
     margin-bottom: 1%;
   }
 }
-// anim plat
+// check lors de l'animation
 .check {
   padding-top: 7%;
   padding-bottom: 6%;
@@ -631,22 +655,20 @@ p {
   font-size: 1.5em;
   color: white;
 }
-// fin anim plat
+// nnom du plat + text
 .nm_plat {
   padding-left: $pm;
-  // width: 100%;
   width: 77%;
   padding-bottom: 3%;
   padding-top: 3%;
-  // text-overflow: ellipsis;
-  // overflow: hidden;
-  // white-space: nowrap;
 }
+// text des plats
 .t {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+// prix du plat
 .money {
   padding-right: 5%;
   margin-bottom: 3%;
@@ -658,6 +680,7 @@ p {
     right: -10%;
   }
 }
+// menu du restaurant entre / plat / desserts
 .menu_s {
   display: flex;
   flex-direction: column;
@@ -680,7 +703,7 @@ p {
     margin-right: auto;
   }
 }
-// animation menu
+// animation des menu
 .menu_s1 {
   @extend .menu_s;
   animation: anim_s 3s ease-in forwards;
@@ -704,6 +727,8 @@ p {
   }
 }
 // fin animation menu
+
+// entrees plats desserts
 .plat_t {
   @include text_s;
   width: 15%;
@@ -716,6 +741,7 @@ p {
     font-size: 1.7em;
   }
 }
+// barre verte sous les entrees plats desserts
 .barre {
   height: 3px;
   width: 2.5em;
@@ -733,6 +759,7 @@ p {
     margin-top: 0.5%;
   }
 }
+// bouton comander
 .bt_c {
   @extend .bt;
   padding-left: 15%;
